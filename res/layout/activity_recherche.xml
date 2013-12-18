@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo"
+        style="@style/logo" />
+
+    <EditText
+        android:id="@+id/editTextRecherche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="14dp"
+        android:ems="10"
+        android:hint="ma position" />
+
+    <Button
+        android:id="@+id/rechercher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextRecherche"
+        android:layout_alignBottom="@+id/editTextRecherche"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/editTextRecherche"
+        android:text="@string/bouton_recherche" />
+
+    <TextView
+        android:id="@+id/rechercheAvancee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextRecherche"
+        android:layout_below="@+id/rechercher"
+        android:text="@string/rechercheAvanceeLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rechercheAvancee" >
+    </ListView>
+
+</RelativeLayout>

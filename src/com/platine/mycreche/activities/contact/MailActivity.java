@@ -7,8 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.platine.mycreche.R;
-import com.platine.mycreche.listeners.AnnulerListener;
-import com.platine.mycreche.listeners.EnvoieMailListener;
+import com.platine.mycreche.listeners.contact.EnvoieMailListener;
+import com.platine.mycreche.listeners.generals.AnnulerListener;
 
 public class MailActivity extends Activity {
 	@Override
@@ -17,7 +17,7 @@ public class MailActivity extends Activity {
 		setContentView(R.layout.activity_envoie_mail);
 		
 		//Récupération des boutons de l'interface
-		Button annuler = (Button)(findViewById(R.id.annuler));
+		Button annuler = (Button)(findViewById(R.id.annulerRechercheAvance));
 		Button envoyermail = (Button)(findViewById(R.id.envoie));
 		
 		//Récupération des fields text

@@ -50,7 +50,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/annuler"
+        android:id="@+id/annulerRechercheAvance"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

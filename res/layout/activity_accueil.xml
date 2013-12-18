@@ -8,44 +8,37 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AccueilActivity" >
 
+    <ImageView
+        android:id="@+id/imageView2"
+        style=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/recherche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contact"
+        android:layout_alignRight="@+id/contact"
+        android:layout_below="@+id/imageView2"
+        android:text="@string/bouton_recherche" />
+
     <Button
         android:id="@+id/contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/recherche"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/recherche"
-        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/recherche"
+        android:layout_centerHorizontal="true"
         android:text="@string/bouton_contact" />
 
     <Button
         android:id="@+id/moncompte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/contact"
         android:layout_alignLeft="@+id/contact"
         android:layout_alignRight="@+id/contact"
-        android:layout_marginBottom="22dp"
+        android:layout_below="@+id/contact"
         android:text="@string/bouton_compte" />
-
-    <Button
-        android:id="@+id/recherche"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/moncompte"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:text="@string/bouton_recherche" />
-
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/recherche"
-        android:src="@drawable/logo" />
 
 </RelativeLayout>

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -16,5 +16,12 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    <style name="logo" parent="AppTheme">
+	    <item name="android:gravity" >center</item>
+	    <item name="android:layout_margin" >0dp</item>
+	    <item name="android:width">75dp</item>
+	    <item name="android:height">50dp</item>
+ 	</style>
+    
 
 </resources>

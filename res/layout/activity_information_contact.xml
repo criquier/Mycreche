@@ -13,7 +13,7 @@
         android:layout_marginTop="135dp" >
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/kmlabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -23,11 +23,11 @@
             android:text="@string/coordonneesLabel" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/rechercheAvancee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView1"
-            android:layout_below="@+id/textView1"
+            android:layout_alignLeft="@+id/kmlabel"
+            android:layout_below="@+id/kmlabel"
             android:layout_marginTop="27dp"
             android:text="@string/telephonelabel" />
 
@@ -35,7 +35,7 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignLeft="@+id/rechercheAvancee"
             android:layout_centerVertical="true"
             android:text="@string/mailLabel" />
 
@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/tel"
             android:layout_alignBottom="@+id/tel"
-            android:layout_alignRight="@+id/textView2"
+            android:layout_alignRight="@+id/rechercheAvancee"
             android:text="Mail" />
     </RelativeLayout>
 
@@ -72,7 +72,7 @@
         android:text="@string/EnvoieMailLabel" />
 
     <Button
-        android:id="@+id/annuler"
+        android:id="@+id/annulerRechercheAvance"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

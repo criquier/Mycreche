@@ -1,4 +1,4 @@
-package com.platine.mycreche.listeners;
+package com.platine.mycreche.listeners.contact;
 
 import com.platine.mycreche.activities.contact.InformationContactActivity;
 

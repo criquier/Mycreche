@@ -6,9 +6,9 @@ import android.view.Menu;
 import android.widget.Button;
 
 import com.platine.mycreche.R;
-import com.platine.mycreche.listeners.ContactListener;
 import com.platine.mycreche.listeners.MonCompteListener;
-import com.platine.mycreche.listeners.RechercheListener;
+import com.platine.mycreche.listeners.contact.ContactListener;
+import com.platine.mycreche.listeners.recherche.RechercheListener;
 
 public class AccueilActivity extends Activity {
 

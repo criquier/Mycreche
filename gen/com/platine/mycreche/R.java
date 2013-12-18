@@ -25,45 +25,53 @@ public final class R {
         public static final int logo=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080011;
-        public static final int annuler=0x7f080009;
-        public static final int contact=0x7f080000;
-        public static final int editTextEmail=0x7f080006;
-        public static final int editTextMessage=0x7f080008;
-        public static final int editTextTitre=0x7f080007;
-        public static final int envoie=0x7f08000a;
-        public static final int envoieMail=0x7f080010;
-        public static final int imageView1=0x7f080004;
-        public static final int imageView2=0x7f080003;
-        public static final int mail=0x7f08000f;
-        public static final int moncompte=0x7f080002;
+        public static final int action_settings=0x7f080016;
+        public static final int annulerRechercheAvance=0x7f080008;
+        public static final int contact=0x7f080002;
+        public static final int editTextEmail=0x7f080005;
+        public static final int editTextLabel=0x7f080014;
+        public static final int editTextMessage=0x7f080007;
+        public static final int editTextRecherche=0x7f080011;
+        public static final int editTextTitre=0x7f080006;
+        public static final int envoie=0x7f080009;
+        public static final int envoieMail=0x7f08000f;
+        public static final int imageView1=0x7f080010;
+        public static final int imageView2=0x7f080000;
+        public static final int kmlabel=0x7f08000a;
+        public static final int listView1=0x7f080013;
+        public static final int mail=0x7f08000e;
+        public static final int moncompte=0x7f080003;
         public static final int recherche=0x7f080001;
-        public static final int relativeLayout1=0x7f080005;
-        public static final int tel=0x7f08000e;
-        public static final int textView1=0x7f08000b;
-        public static final int textView2=0x7f08000c;
-        public static final int textView3=0x7f08000d;
+        public static final int rechercheAvancee=0x7f08000b;
+        public static final int rechercher=0x7f080012;
+        public static final int relativeLayout1=0x7f080004;
+        public static final int seekBarKm=0x7f080015;
+        public static final int tel=0x7f08000d;
+        public static final int textView3=0x7f08000c;
     }
     public static final class layout {
         public static final int activity_accueil=0x7f030000;
         public static final int activity_envoie_mail=0x7f030001;
         public static final int activity_information_contact=0x7f030002;
+        public static final int activity_recherche=0x7f030003;
+        public static final int activity_recherche_avancee=0x7f030004;
     }
     public static final class menu {
         public static final int accueil=0x7f070000;
     }
     public static final class string {
-        public static final int EnvoieMailLabel=0x7f050008;
+        public static final int EnvoieMailLabel=0x7f05000a;
         public static final int action_settings=0x7f050001;
-        public static final int annulerLabel=0x7f050007;
+        public static final int annulerLabel=0x7f050009;
         public static final int app_name=0x7f050000;
-        public static final int bouton_compte=0x7f05000a;
+        public static final int bouton_compte=0x7f050004;
         public static final int bouton_contact=0x7f050002;
-        public static final int bouton_envoyer=0x7f050009;
+        public static final int bouton_envoyer=0x7f050006;
         public static final int bouton_recherche=0x7f050003;
-        public static final int coordonneesLabel=0x7f050004;
-        public static final int mailLabel=0x7f050006;
-        public static final int telephonelabel=0x7f050005;
+        public static final int coordonneesLabel=0x7f050005;
+        public static final int mailLabel=0x7f050008;
+        public static final int rechercheAvanceeLabel=0x7f05000b;
+        public static final int telephonelabel=0x7f050007;
     }
     public static final class style {
         /** 
@@ -92,5 +100,6 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f060001;
+        public static final int logo=0x7f060002;
     }
 }
