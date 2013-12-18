@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mycreche</string>
+    <string name="action_settings">Settings</string>
+    <string name="bouton_contact">Nous contacter</string>
+    <string name="bouton_recherche">Rechercher une crèche</string>
+    <string name="coordonneesLabel">Nos coordonnées :</string>
+    <string name="telephonelabel">Téléphone : 06 66 66 66 66</string>
+    <string name="mailLabel">mail : contact@mycreche.fr</string>
+    <string name="annulerLabel">Annuler</string>
+    <string name="EnvoieMailLabel">Envoyer un mail</string>
+    <string name="bouton_envoyer">Envoyer</string><string name="bouton_compte">Mon compte</string>
+    
+
+</resources>
