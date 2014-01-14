@@ -28,7 +28,7 @@ public class RechercheAvanceeActivity extends Activity {
 		TextView kmlabel = (TextView)findViewById(R.id.kmlabel);
 		
 		annuler.setOnClickListener(new AnnulerListener(this));
-		recherche.setOnClickListener(new RechercheListener(this.getApplicationContext(),false));
+		recherche.setOnClickListener(new RechercheListener(this.getApplicationContext(),false,label));
 		
 		km.setMax(200);
 		km.setOnSeekBarChangeListener(new KmSeekBarListener(this.getApplicationContext(),kmlabel,km));

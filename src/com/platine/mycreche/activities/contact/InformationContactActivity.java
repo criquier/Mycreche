@@ -8,6 +8,7 @@ import android.widget.Button;
 import com.platine.mycreche.R;
 import com.platine.mycreche.listeners.contact.EnvoieMailListener;
 import com.platine.mycreche.listeners.generals.AnnulerListener;
+import com.platine.mycreche.listeners.generals.MailListener;
 import com.platine.mycreche.listeners.generals.TelephoneListener;
 
 public class InformationContactActivity extends Activity{
@@ -26,6 +27,7 @@ public class InformationContactActivity extends Activity{
 		annuler.setOnClickListener(new AnnulerListener(this));
 		tel.setOnClickListener(new TelephoneListener(this.getApplicationContext()));	
 		envoieMail.setOnClickListener(new EnvoieMailListener(this.getApplicationContext()));
+		mail.setOnClickListener(new MailListener(this));
 	}
 
 	
