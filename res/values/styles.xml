@@ -16,12 +16,57 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
     <style name="logo" parent="AppTheme">
-	    <item name="android:gravity" >center</item>
-	    <item name="android:layout_margin" >0dp</item>
-	    <item name="android:width">75dp</item>
-	    <item name="android:height">50dp</item>
+	    <item name="android:layout_width">250dp</item>
+	    <item name="android:layout_height">150dp</item>
+	    <item name="android:layout_centerHorizontal">true</item>
+	    <item name="android:layout_alignParentTop">true</item>
  	</style>
     
+    <style name="button" parent="AppTheme">
+	    <item name="android:layout_height">50dp</item>
+    </style>
+    
+    <style name="buttonTel" parent="button">
+	    <item name="android:layout_width">50dp</item>
+	    <item name="android:background">@drawable/tel</item>
+    </style>
+    
+    <style name="buttonMail" parent="button">
+	    <item name="android:layout_width">50dp</item>
+	    <item name="android:background">@drawable/mail</item>
+    </style>
+    
+    
+    <style name="buttonAccueil" parent="button">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/boutonarrondibleu</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+    
+    <style name="buttonAppli" parent="button">
+        <item name="android:layout_width">100dp</item>
+    </style>
+    
+    <style name="buttonAnnuler" parent="buttonAppli">
+        <item name="android:text">@string/annulerLabel</item>
+        <item name="android:background">@drawable/boutonarrondiblanc</item>
+    </style>
 
+    
+    
+    <style name="buttonAction" parent="buttonAppli">
+        <item name="android:background">@drawable/boutonarrondivert</item>
+    </style>
+    
+    <style name="blockContent" parent="AppTheme">
+        <item name="android:layout_width">300dp</item>   
+        <item name="android:layout_height">200dp</item>   
+        <item name="android:layout_centerHorizontal">true</item>        
+        <item name="android:background">@drawable/blockarrondigris</item>
+    </style>
+    
 </resources>

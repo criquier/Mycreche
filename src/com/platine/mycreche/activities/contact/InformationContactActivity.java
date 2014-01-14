@@ -17,9 +17,9 @@ public class InformationContactActivity extends Activity{
 		setContentView(R.layout.activity_information_contact);
 		
 		//récupération des boutons du layout
-		Button annuler = (Button)findViewById(R.id.annulerRechercheAvance);
+		Button annuler = (Button)findViewById(R.id.annuler);
 		Button envoieMail = (Button)findViewById(R.id.envoieMail);
-		Button tel = (Button)findViewById(R.id.tel);
+		Button tel = (Button)findViewById(R.id.telephone);
 		Button mail = (Button)findViewById(R.id.mail);
 		
 		//initialisation des listener

@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent" 
+    android:background="@drawable/fond">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/app_name"
+        style="@style/logo" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout1"
-        android:layout_width="275dp"
-        android:layout_height="200dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="135dp" >
+        android:layout_below="@+id/imageView1"
+        style="@style/blockContent" >
 
         <TextView
             android:id="@+id/kmlabel"
@@ -28,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/kmlabel"
             android:layout_below="@+id/kmlabel"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="18dp"
             android:text="@string/telephonelabel" />
 
         <TextView
@@ -40,46 +43,37 @@
             android:text="@string/mailLabel" />
 
         <Button
-            android:id="@+id/tel"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView3"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="18dp"
-            android:text="Telephoner" />
+            android:id="@+id/mail"
+            style="@style/buttonMail"
+            android:layout_alignTop="@+id/telephone"
+            android:layout_toRightOf="@+id/telephone"/>
 
         <Button
-            android:id="@+id/mail"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/tel"
-            android:layout_alignBottom="@+id/tel"
-            android:layout_alignRight="@+id/rechercheAvancee"
-            android:text="Mail" />
+            android:id="@+id/telephone"
+            style="@style/buttonTel"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/textView3" />
+
     </RelativeLayout>
 
     <Button
         android:id="@+id/envoieMail"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/buttonAction"
+        android:layout_width="150dp"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/relativeLayout1"
-        android:layout_marginBottom="17dp"
-        android:layout_marginRight="35dp"
+        android:layout_marginBottom="14dp"
         android:text="@string/EnvoieMailLabel" />
 
     <Button
-        android:id="@+id/annulerRechercheAvance"
+        android:id="@+id/annuler"
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_alignBaseline="@+id/envoieMail"
         android:layout_alignBottom="@+id/envoieMail"
         android:layout_alignLeft="@+id/relativeLayout1"
-        android:layout_marginLeft="23dp"
+        android:background="@drawable/boutonarrondiblanc"
         android:text="@string/annulerLabel" />
 
 </RelativeLayout>

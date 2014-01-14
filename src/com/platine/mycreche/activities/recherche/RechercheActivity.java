@@ -18,7 +18,7 @@ public class RechercheActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_recherche);
 		
-		Button recherche = (Button)findViewById(R.id.rechercher);
+		Button recherche = (Button)findViewById(R.id.buttonRechercher);
 		
 		EditText labelRecherche = (EditText)findViewById(R.id.editTextRecherche);
 	

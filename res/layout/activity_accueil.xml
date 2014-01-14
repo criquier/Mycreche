@@ -2,43 +2,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fond"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AccueilActivity" >
 
+    <Button
+        android:id="@+id/contact"
+        android:text="@string/bouton_contact"
+        style="@style/buttonAccueil"/>
+    
     <ImageView
         android:id="@+id/imageView2"
-        style=""
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo"
+        android:contentDescription="@string/app_name"
+        style="@style/logo" />
 
     <Button
         android:id="@+id/recherche"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/contact"
-        android:layout_alignRight="@+id/contact"
-        android:layout_below="@+id/imageView2"
-        android:text="@string/bouton_recherche" />
-
-    <Button
-        android:id="@+id/contact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/recherche"
-        android:layout_centerHorizontal="true"
-        android:text="@string/bouton_contact" />
-
+        android:layout_below="@+id/contact"
+        android:layout_marginTop="20dp"
+        android:text="@string/bouton_recherche"
+        style="@style/buttonAccueil"/>
+    
     <Button
         android:id="@+id/moncompte"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/contact"
-        android:layout_alignRight="@+id/contact"
-        android:layout_below="@+id/contact"
+        android:layout_below="@+id/recherche"
+        android:layout_marginTop="21dp"
+        style="@style/buttonAccueil"
         android:text="@string/bouton_compte" />
 
 </RelativeLayout>

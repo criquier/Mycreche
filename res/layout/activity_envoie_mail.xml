@@ -1,39 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="@drawable/fond" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/app_name"
+        style="@style/logo" />
+
+    <Button
+        android:id="@+id/annuler"
+        style="@style/buttonAnnuler"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignTop="@+id/envoie" />
+
+    <Button
+        android:id="@+id/envoie"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_marginBottom="17dp"
+        android:text="@string/bouton_envoyer"
+        style="@style/buttonAction" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout1"
-        android:layout_width="250dp"
-        android:layout_height="200dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="38dp"
-        android:layout_marginTop="120dp" >
-
-        <EditText
-            android:id="@+id/editTextEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:ems="10"
-            android:hint="Email" />
-
-        <EditText
-            android:id="@+id/editTextTitre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/editTextEmail"
-            android:layout_below="@+id/editTextEmail"
-            android:layout_marginTop="14dp"
-            android:ems="10"
-            android:hint="Titre" >
-
-            <requestFocus />
-        </EditText>
+        android:layout_above="@+id/annuler"       
+        android:layout_marginBottom="18dp"
+        style="@style/blockContent"
+       >
 
         <EditText
             android:id="@+id/editTextMessage"
@@ -44,30 +40,42 @@
             android:layout_below="@+id/editTextTitre"
             android:layout_marginTop="19dp"
             android:ems="10"
-            android:hint="Message"
-            android:inputType="textMultiLine" />
+            android:hint="@string/hintMessage"
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextTitre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextEmail"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:inputType="textEmailSubject"
+            android:hint="@string/hintTitre" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTextTitre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="17dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="@string/hintAdresse" />
+
+        <TextView
+            android:id="@+id/titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:text="@string/nousContacter" />
 
     </RelativeLayout>
-
-    <Button
-        android:id="@+id/annulerRechercheAvance"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/envoie"
-        android:layout_alignBottom="@+id/envoie"
-        android:layout_alignLeft="@+id/relativeLayout1"
-        android:layout_marginLeft="20dp"
-        android:text="@string/annulerLabel" />
-
-    <Button
-        android:id="@+id/envoie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/relativeLayout1"
-        android:layout_marginBottom="22dp"
-        android:layout_marginRight="14dp"
-        android:text="@string/bouton_envoyer" />
 
 </RelativeLayout>
