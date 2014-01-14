@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/app_name"
+        style="@style/logo" />
+
+    <Button
+        android:id="@+id/annulerDetailCreche"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="34dp"
+        style="@style/buttonAnnuler"/>
+    
+    <Button
+        android:id="@+id/maps" 
+        android:layout_alignBottom="@+id/annulerDetailCreche"
+        android:layout_alignRight="@+id/imageView1"
+        android:text="@string/visualiserCreche"
+        style="@style/buttonAction" />
+
+    <RelativeLayout
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="18dp"
+        style="@style/blockContent" >
+
+        <TextView
+            android:id="@+id/descriptionCreche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/telephone"
+            style="@style/buttonTel"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp" />
+
+        <Button
+            android:id="@+id/emailCreche"
+            style="@style/buttonMail"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/telephone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
