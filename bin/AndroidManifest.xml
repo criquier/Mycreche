@@ -32,7 +32,14 @@
             android:name="com.platine.mycreche.activities.contact.MailActivity"
             android:label="@string/app_name" >
         </activity>
-        
+        <activity
+            android:name="com.platine.mycreche.activities.recherche.RechercheActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.platine.mycreche.activities.recherche.RechercheAvanceeActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

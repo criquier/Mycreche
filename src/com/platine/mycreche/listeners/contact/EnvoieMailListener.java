@@ -1,7 +1,8 @@
-package com.platine.mycreche.listeners;
+package com.platine.mycreche.listeners.contact;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 
@@ -44,7 +45,6 @@ public class EnvoieMailListener implements OnClickListener {
 			intent.putExtra(Intent.EXTRA_EMAIL, this.email);
 			intent.putExtra(Intent.EXTRA_SUBJECT, this.titre);
 			intent.putExtra(Intent.EXTRA_TEXT, this.message);
-	
 			//on lance l'activité
 			this.context.startActivity(Intent.createChooser(intent, "Send Email"));
 		

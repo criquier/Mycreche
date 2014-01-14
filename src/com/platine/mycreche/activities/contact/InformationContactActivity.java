@@ -6,9 +6,9 @@ import android.view.Menu;
 import android.widget.Button;
 
 import com.platine.mycreche.R;
-import com.platine.mycreche.listeners.AnnulerListener;
-import com.platine.mycreche.listeners.EnvoieMailListener;
-import com.platine.mycreche.listeners.TelephoneListener;
+import com.platine.mycreche.listeners.contact.EnvoieMailListener;
+import com.platine.mycreche.listeners.generals.AnnulerListener;
+import com.platine.mycreche.listeners.generals.TelephoneListener;
 
 public class InformationContactActivity extends Activity{
 	@Override
@@ -17,7 +17,7 @@ public class InformationContactActivity extends Activity{
 		setContentView(R.layout.activity_information_contact);
 		
 		//récupération des boutons du layout
-		Button annuler = (Button)findViewById(R.id.annuler);
+		Button annuler = (Button)findViewById(R.id.annulerRechercheAvance);
 		Button envoieMail = (Button)findViewById(R.id.envoieMail);
 		Button tel = (Button)findViewById(R.id.tel);
 		Button mail = (Button)findViewById(R.id.mail);
