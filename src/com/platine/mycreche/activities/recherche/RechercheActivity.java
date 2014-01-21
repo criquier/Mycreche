@@ -29,7 +29,7 @@ public class RechercheActivity extends ListActivity {
 		EditText labelRecherche = (EditText)findViewById(R.id.editTextRecherche);
 		
 		TextView rechercheA = (TextView)findViewById(R.id.rechercheAvancee);
-			
+
 		CrecheDAO manager = new CrecheDAO(getApplicationContext());
 		List<Creche> creches = new ArrayList<Creche>();
 		
@@ -42,28 +42,29 @@ public class RechercheActivity extends ListActivity {
 			if(!adresse.equals("")){
 				labelRecherche.setText(adresse.replace("#", ""));	
 				if(!distance.equals("")){
-					
+					creches = manager.getAllCreches();
 				}
 				else{
-/*					String[] address = adresse.split("#");
-					creches = manager.getCrecheByCommune(address[3]);
-*/				}
+//					String[] address = adresse.split("#");
+					creches = manager.getCrecheByCommune(adresse);
+				}
 
 				//creches.add(new Creche());
 			}
 			else{
 				if(!distance.equals("")){
-					
+					creches = manager.getAllCreches();
+
 				}
 				else{
-					
+					creches = manager.getAllCreches();
 				}
-				creches = manager.getAllCreches();
 			}
 		}
 		else{
 			creches = manager.getAllCreches();
 		}
+
 
 		//on initialise la liste des creches	
 		CrecheAdapter myCrecheAdapter = new CrecheAdapter(this, creches);

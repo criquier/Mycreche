@@ -64,6 +64,7 @@ public class InitDB {
 		 
 		 
 		 
+
 		 crecheDAO.save(c1);
 		 crecheDAO.save(c2);
 		 crecheDAO.save(c3);

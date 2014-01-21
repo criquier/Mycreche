@@ -10,6 +10,7 @@ import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.dao.RuntimeExceptionDao;
 import com.j256.ormlite.stmt.PreparedQuery;
 import com.j256.ormlite.stmt.QueryBuilder;
+import com.j256.ormlite.stmt.Where;
 import com.platine.mycreche.model.Creche;
 
 public class CrecheDAO extends DatabaseHelper {
@@ -26,9 +27,25 @@ public class CrecheDAO extends DatabaseHelper {
 				getCrecheDao().create(c);
 			}
 			
+			// Extrait de la base de donnée l'objet Creche dont le nom est nom
+			public List<Creche> getCrecheByCommune(String commune){
+				PreparedQuery<Creche> preparedQuery=null;
+				
+				Where<Creche, Integer> queryBuilder;
+				try {
+					queryBuilder = getCrecheDao().queryBuilder().where().eq("commune", commune);
+					preparedQuery = queryBuilder.prepare();
+				} 
+				catch (java.sql.SQLException e) {
+				}
+				
+		         return getCrecheDao().query(preparedQuery); 
+												
+			}
+			
 			// Extrait de la base de donnée l'objet Creche dont l'Id es id
 			public Creche getCreche(long id){
-				return getCrecheDao().queryForId(id);
+				return getCrecheDao().queryForId((int) id);
 			}
 			// Recupère tous les objets villes contenue dans la BD
 			// Comme pour les precedentes methodes on aurait pu utiliser getAllCrechesDao()

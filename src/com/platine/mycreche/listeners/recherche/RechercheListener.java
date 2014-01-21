@@ -34,23 +34,25 @@ public class RechercheListener implements OnClickListener {
 	
 	@Override
 	public void onClick(View v) {
+		// Si c'est la recherche avancée
 		if(this.avancee){
 			Intent intent = new Intent(this.context, RechercheAvanceeActivity.class);
 			intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 			this.context.startActivity(intent);
 		}
 		else{
-			if(!this.avancee){
+			// Nous sommes en mode recherche normale
 				Intent intent = new Intent(this.context, RechercheActivity.class);
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-				intent.putExtra("adresse", label.toString());
+				
+				if(this.label!=null)
+				intent.putExtra("adresse", label.getText().toString());
+
 				this.context.startActivity(intent);
-			}
-			else{
+
 				if(this.label!=null)
 					Toast.makeText(this.context, "vous recherche au alentours de "+label.getText().toString(), Toast.LENGTH_LONG).show();
 			}
 		}
-	}
 
 }
