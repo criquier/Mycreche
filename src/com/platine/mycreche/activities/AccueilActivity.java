@@ -21,6 +21,7 @@ public class AccueilActivity extends Activity {
 		//initialisation de la Base de donnée. cette fonction met du contenu
 		// dans la BD de donnée si elle n'en contient pas
 		InitDB.fillDB(this);
+		//InitDB.fillDB(getApplicationContext());
 		//récupération des boutons
 		Button contact = (Button)(findViewById(R.id.contact));
 		Button recherche = (Button)(findViewById(R.id.recherche));

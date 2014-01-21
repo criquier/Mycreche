@@ -30,13 +30,16 @@ public class RechercheActivity extends ListActivity {
 		
 		TextView rechercheA = (TextView)findViewById(R.id.rechercheAvancee);
 	
-		InitDB.fillDB(getApplicationContext());
+		
 		
 		Bundle extra = getIntent().getExtras();
-		String adresse = extra.getString("adresse");
-		if(adresse != ""){
-			labelRecherche.setText(adresse);
+		if(extra!=null){
+			String adresse = extra.getString("adresse");
+			if(!adresse.equals("")){
+				labelRecherche.setText(adresse);
+			}
 		}
+		
 		
 		CrecheDAO manager = new CrecheDAO(getApplicationContext());
 
