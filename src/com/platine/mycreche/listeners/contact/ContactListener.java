@@ -1,12 +1,11 @@
 package com.platine.mycreche.listeners.contact;
 
-import com.platine.mycreche.activities.contact.InformationContactActivity;
-
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+
+import com.platine.mycreche.activities.contact.InformationContactActivity;
 
 public class ContactListener implements OnClickListener {
 

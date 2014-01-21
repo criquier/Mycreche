@@ -53,10 +53,11 @@
 
     <Button
         android:id="@+id/rechercheAvancee"
+        style="@style/buttonAction"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="20dp"
         android:layout_marginRight="16dp"
-        style="@style/buttonAction"/>
+        android:text="Recherche" />
 
 </RelativeLayout>

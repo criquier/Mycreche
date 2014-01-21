@@ -50,6 +50,9 @@ public class Entite {
 		this.nom=nom;
 	}
 	 //getters et Setters
+	public long getId(){
+		return id;
+	}
 	public String getNumRue() {
 		return numRue;
 	}

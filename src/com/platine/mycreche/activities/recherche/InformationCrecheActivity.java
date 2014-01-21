@@ -1,17 +1,15 @@
 package com.platine.mycreche.activities.recherche;
 
-import com.platine.mycreche.R;
-import com.platine.mycreche.listeners.contact.EnvoieMailListener;
-import com.platine.mycreche.listeners.generals.AnnulerListener;
-import com.platine.mycreche.listeners.generals.MailListener;
-import com.platine.mycreche.listeners.generals.TelephoneListener;
-import com.platine.mycreche.listeners.recherche.MapsListener;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.Button;
-import android.widget.EditText;
+
+import com.platine.mycreche.R;
+import com.platine.mycreche.listeners.generals.AnnulerListener;
+import com.platine.mycreche.listeners.generals.MailListener;
+import com.platine.mycreche.listeners.generals.TelephoneListener;
+import com.platine.mycreche.listeners.recherche.MapsListener;
 
 public class InformationCrecheActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {

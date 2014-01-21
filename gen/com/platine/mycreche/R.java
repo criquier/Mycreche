@@ -36,6 +36,7 @@ public final class R {
         public static final int tel=0x7f020009;
     }
     public static final class id {
+        public static final int NomCreche=0x7f09001b;
         public static final int action_settings=0x7f09001c;
         public static final int annuler=0x7f090005;
         public static final int annulerDetailCreche=0x7f090012;
@@ -62,7 +63,6 @@ public final class R {
         public static final int relativeLayout1=0x7f090006;
         public static final int seekBarKm=0x7f090019;
         public static final int telephone=0x7f090010;
-        public static final int textView1=0x7f09001b;
         public static final int textView3=0x7f09000e;
         public static final int titre=0x7f09000b;
     }
