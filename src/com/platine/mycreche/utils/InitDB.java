@@ -33,8 +33,37 @@ public class InitDB {
 	 // création de crèches si la BD n'en contient pas
 	 if(crecheDAO.count()==0){
 		 Creche c1=new Creche("Bebe Sisters");
+		 c1.setNumRue("7");
+		 c1.setNomRue("Des Stations");
+		 c1.setCommune("Lille");
+		 c1.setCodePostal("59800");
+		 c1.setAdresseMail("contact@bebesister.com");
+		 c1.setDescription("Alors voici les bébé syster le top of the top of the world");
+		 c1.setLatitude((long) 50.63);
+		 c1.setLongitude((long) 3.05);
+		 
 		 Creche c2=new Creche("Kiki");
+		 c2.setNumRue("5");
+		 c2.setNomRue("Du Pont Neuf");
+		 c2.setCommune("Lille");
+		 c2.setCodePostal("59800");
+		 c2.setAdresseMail("contact@kiki.fr");
+		 c2.setDescription("Alors voici les bébé syster le top of the top of the world");
+		 c2.setLatitude((long) 50.64);
+		 c2.setLongitude((long) 3.06);
+		 
 		 Creche c3=new Creche("Looki looki");
+		 c3.setNumRue("32");
+		 c3.setNomRue("Alhpand");
+		 c3.setCommune("Avion");
+		 c3.setCodePostal("62210");
+		 c3.setAdresseMail("contact@lookilooki.com");
+		 c3.setDescription("Alors voici les bébé syster le top of the top of the world");
+		 c3.setLatitude((long) 50.41);
+		 c3.setLongitude((long) 2.82);
+		 
+		 
+		 
 		 crecheDAO.save(c1);
 		 crecheDAO.save(c2);
 		 crecheDAO.save(c3);

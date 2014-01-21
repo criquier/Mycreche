@@ -13,7 +13,6 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.platine.mycreche.activities.AccueilActivity"
@@ -38,6 +37,14 @@
         </activity>
         <activity
             android:name="com.platine.mycreche.activities.recherche.RechercheAvanceeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.platine.mycreche.activities.recherche.ConnexionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.platine.mycreche.activities.recherche.InscriptionActivity"
             android:label="@string/app_name" >
         </activity>
     </application>

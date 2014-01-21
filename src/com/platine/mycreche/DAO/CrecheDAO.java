@@ -27,7 +27,7 @@ public class CrecheDAO extends DatabaseHelper {
 			}
 			
 			// Extrait de la base de donnée l'objet Creche dont l'Id es id
-			public Creche getCreche(int id){
+			public Creche getCreche(long id){
 				return getCrecheDao().queryForId(id);
 			}
 			// Recupère tous les objets villes contenue dans la BD
@@ -49,6 +49,7 @@ public class CrecheDAO extends DatabaseHelper {
 				return getCrecheDao().query(preparedQuery);
 						
 			}
+						
 			// Supprime toutes les instances de Creche contenues dans la BD
 			public void deleteAllCreches(){
 				getCrecheDao().clearObjectCache();

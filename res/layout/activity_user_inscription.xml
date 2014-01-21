@@ -18,13 +18,13 @@
         style="@style/blockContent">
 
      <TextView
-         android:id="@+id/textView1"
+         android:id="@+id/nomCreche"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_alignLeft="@+id/editTextPseudo"
          android:layout_alignParentTop="true"
          android:layout_marginTop="14dp"
-         android:text="Inscription"
+         android:text="@string/bouton_inscription"
          android:textAppearance="?android:attr/textAppearanceMedium" />
 
      <EditText
@@ -32,11 +32,11 @@
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_alignParentLeft="true"
-         android:layout_below="@+id/textView1"
+         android:layout_below="@+id/nomCreche"
          android:layout_marginLeft="26dp"
          android:layout_marginTop="14dp"
          android:ems="10"
-         android:hint="Pseudo" >
+         android:hint="@string/hintPseudo" >
 
          <requestFocus />
      </EditText>
@@ -49,7 +49,7 @@
          android:layout_below="@+id/editTextPseudo"
          android:layout_marginTop="14dp"
          android:ems="10"
-         android:hint="Mot de passe"
+         android:hint="@string/hintMotDePasse"
          android:inputType="textPassword" />
 
      <EditText
@@ -60,8 +60,8 @@
          android:layout_below="@+id/editTextPassWord"
          android:layout_marginTop="14dp"
          android:ems="10"
-         android:hint="Confimation"
-         android:inputType="textPersonName" />
+         android:hint="@string/hintConfirmation"
+         android:inputType="textPassword" />
      
  </RelativeLayout>
 
@@ -70,7 +70,7 @@
         style="@style/buttonAction"
         android:layout_alignRight="@+id/relativeLayout1"
         android:layout_alignTop="@+id/annulerDetailCreche"
-        android:text="Inscription" />
+        android:text="@string/bouton_inscription" />
 
     <Button
         android:id="@+id/annulerDetailCreche"

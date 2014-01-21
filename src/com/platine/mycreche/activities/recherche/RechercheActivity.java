@@ -1,5 +1,6 @@
 package com.platine.mycreche.activities.recherche;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import android.app.ListActivity;
@@ -30,26 +31,45 @@ public class RechercheActivity extends ListActivity {
 		TextView rechercheA = (TextView)findViewById(R.id.rechercheAvancee);
 			
 		CrecheDAO manager = new CrecheDAO(getApplicationContext());
-		List<Creche> creches;
+		List<Creche> creches = new ArrayList<Creche>();
+		
+		//on récupére les élements transmis par la recherche avancé
 		Bundle extra = getIntent().getExtras();
-		String adresse = extra.getString("adresse");
-		if(!adresse.equals("")){
-			labelRecherche.setText(adresse);
-			//creches.add(new Creche());
+		if(extra != null){
+			String adresse = extra.getString("adresse");
+			String distance = extra.getString("distance");
+			
+			if(!adresse.equals("")){
+				labelRecherche.setText(adresse.replace("#", ""));	
+				if(!distance.equals("")){
+					
+				}
+				else{
+/*					String[] address = adresse.split("#");
+					creches = manager.getCrecheByCommune(address[3]);
+*/				}
+
+				//creches.add(new Creche());
+			}
+			else{
+				if(!distance.equals("")){
+					
+				}
+				else{
+					
+				}
+				creches = manager.getAllCreches();
+			}
 		}
 		else{
 			creches = manager.getAllCreches();
 		}
-		
-		
 
-		//String[] listeStrings = {"France","Allemagne","Russie"};
-		
-		//ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.element_liste_creche,listeStrings);
-		
+		//on initialise la liste des creches	
 		CrecheAdapter myCrecheAdapter = new CrecheAdapter(this, creches);
 		this.setListAdapter(myCrecheAdapter);
 		
+		//on affecte les listeners
 		recherche.setOnClickListener(new RechercheListener(this.getApplicationContext(),false,labelRecherche));
 		rechercheA.setOnClickListener(new RechercheListener(this.getApplicationContext(),true));
 	}

@@ -11,6 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.platine.mycreche.R;
+import com.platine.mycreche.listeners.recherche.ItemListListener;
 import com.platine.mycreche.model.Creche;
 
 public class CrecheAdapter extends BaseAdapter {
@@ -76,13 +77,7 @@ public class CrecheAdapter extends BaseAdapter {
 	        holder.distance.setText("0km");
 	        
 	        // on intercepte le click sur les items de la liste
-	        view.setOnClickListener(new OnClickListener() {
-
-	            @Override
-	            public void onClick(View v) {
-	              
-	            }
-	        });
+	        view.setOnClickListener(new ItemListListener(activity.getApplicationContext(),creches.get(position).getId()));
 	      
 	        return view;
 		    

@@ -19,8 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/NomCreche"
-        android:layout_below="@+id/NomCreche"
-        android:text="TextView" />
+        android:layout_below="@+id/NomCreche"/>
 
     <TextView
         android:id="@+id/NomCreche"
@@ -28,7 +27,6 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/imageView1"
         android:layout_toRightOf="@+id/imageView1"
-        android:text="Medium Text"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -36,7 +34,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
-        android:layout_alignParentRight="true"
-        android:text="TextView" />
+        android:layout_alignParentRight="true" />
 
 </RelativeLayout>

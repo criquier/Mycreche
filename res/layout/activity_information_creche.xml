@@ -19,7 +19,7 @@
         style="@style/buttonAnnuler"/>
     
     <Button
-        android:id="@+id/boutonInscription" 
+        android:id="@+id/valider" 
         android:layout_alignBottom="@+id/annulerDetailCreche"
         android:layout_alignRight="@+id/imageView1"
         android:text="@string/visualiserCreche"
@@ -50,6 +50,35 @@
             android:layout_alignParentTop="true"
             android:layout_marginRight="14dp"
             android:layout_toLeftOf="@+id/telephone" />
+
+        <TextView
+            android:id="@+id/nomCreche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/emailCreche"
+            android:layout_alignBottom="@+id/emailCreche"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/descriptionCreche"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/adresseCreche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nomCreche"
+            android:layout_below="@+id/emailCreche"
+            android:layout_marginLeft="16dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/distanceCreche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/descriptionCreche"
+            android:layout_alignBottom="@+id/descriptionCreche"
+            android:layout_alignRight="@+id/telephone"
+            android:text="TextView" />
 
     </RelativeLayout>
 

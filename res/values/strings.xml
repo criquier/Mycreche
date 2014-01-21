@@ -16,6 +16,9 @@
     <string name="hintAdresse">Email</string>
     <string name="hintTitre">Titre</string>
     <string name="hintPosition">Ma position</string>
+    <string name="hintPseudo">Pseudo</string>
+    <string name="hintMotDePasse">Mot de passe</string>
+    <string name="hintConfirmation">Confirmation</string>
     
     <!-- Les titres -->
     <string name="nousContacter">Nous contacter</string>
@@ -28,4 +31,6 @@
     <string name="EnvoieMailLabel">Envoyer un mail</string>
     <string name="bouton_envoyer">Envoyer</string>
     <string name="annulerLabel">Annuler</string>
+    <string name="bouton_connexion">Connexion</string>
+    <string name="bouton_inscription">Inscription</string>
 </resources>
