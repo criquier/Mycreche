@@ -19,7 +19,7 @@
         style="@style/buttonAnnuler"/>
     
     <Button
-        android:id="@+id/maps" 
+        android:id="@+id/boutonInscription" 
         android:layout_alignBottom="@+id/annulerDetailCreche"
         android:layout_alignRight="@+id/imageView1"
         android:text="@string/visualiserCreche"

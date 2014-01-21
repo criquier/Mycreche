@@ -17,7 +17,6 @@ import com.platine.mycreche.DAO.CrecheDAO;
 import com.platine.mycreche.liste.adapter.CrecheAdapter;
 import com.platine.mycreche.listeners.recherche.RechercheListener;
 import com.platine.mycreche.model.Creche;
-import com.platine.mycreche.utils.InitDB;
 
 public class RechercheActivity extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,21 +28,21 @@ public class RechercheActivity extends ListActivity {
 		EditText labelRecherche = (EditText)findViewById(R.id.editTextRecherche);
 		
 		TextView rechercheA = (TextView)findViewById(R.id.rechercheAvancee);
-	
-		
-		
+			
 		Bundle extra = getIntent().getExtras();
 		if(extra!=null){
 			String adresse = extra.getString("adresse");
 			if(!adresse.equals("")){
 				labelRecherche.setText(adresse);
 			}
+			
 		}
 		
-		
 		CrecheDAO manager = new CrecheDAO(getApplicationContext());
+		List<Creche> creches;
+		creches = manager.getAllCreches();
 
-		List<Creche> creches = manager.getAllCreches();
+
 		//String[] listeStrings = {"France","Allemagne","Russie"};
 		
 		//ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.element_liste_creche,listeStrings);

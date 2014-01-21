@@ -44,8 +44,10 @@ public class RechercheListener implements OnClickListener {
 			// Nous sommes en mode recherche normale
 				Intent intent = new Intent(this.context, RechercheActivity.class);
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				
 				if(this.label!=null)
 				intent.putExtra("adresse", label.getText().toString());
+
 				this.context.startActivity(intent);
 
 				if(this.label!=null)

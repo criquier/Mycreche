@@ -33,11 +33,21 @@ public class InitDB {
 	 // création de crèches si la BD n'en contient pas
 	 if(crecheDAO.count()==0){
 		 Creche c1=new Creche("Bebe Sisters");
+		 c1.setCodePostal("59650");
+		 c1.setCommune("Ville Neuve d'Asc");
 		 Creche c2=new Creche("Kiki");
+		 c2.setCommune("Roubaix");
+		 c2.setCodePostal("59100");
 		 Creche c3=new Creche("Looki looki");
+		 c2.setCommune("Croix");
+		 c2.setCodePostal("59200");
+		 Creche c4=new Creche("Albatros");
+		 c2.setCommune("Harras");
+		 c2.setCodePostal("59400");
 		 crecheDAO.save(c1);
 		 crecheDAO.save(c2);
 		 crecheDAO.save(c3);
+		 crecheDAO.save(c4);
 	 }
 	 
 	 // création d'assistante Maternelle  si la BD n'en contient pas

@@ -19,7 +19,7 @@ public class InformationCrecheActivity extends Activity {
 		//Récupération des boutons de l'interface
 		Button telephone = (Button)(findViewById(R.id.telephone));
 		Button mail = (Button)(findViewById(R.id.emailCreche));
-		Button maps = (Button)findViewById(R.id.maps);
+		Button maps = (Button)findViewById(R.id.boutonInscription);
 		Button annuler = (Button)findViewById(R.id.annulerDetailCreche);
 		
 		telephone.setOnClickListener(new TelephoneListener(getApplicationContext()));
