@@ -43,6 +43,7 @@ public class RechercheListener implements OnClickListener {
 			if(!this.avancee){
 				Intent intent = new Intent(this.context, RechercheActivity.class);
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				intent.putExtra("adresse", label.toString());
 				this.context.startActivity(intent);
 			}
 			else{

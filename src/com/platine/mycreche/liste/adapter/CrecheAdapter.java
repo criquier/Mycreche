@@ -42,6 +42,8 @@ public class CrecheAdapter extends BaseAdapter {
 
 	public class ViewHolder{
 		protected TextView NomCreche;
+		protected TextView adresse;
+		protected TextView distance;
 	}
 	
 	@Override
@@ -58,6 +60,10 @@ public class CrecheAdapter extends BaseAdapter {
 	            final ViewHolder viewHolder = new ViewHolder();
 
 	            viewHolder.NomCreche = (TextView) view.findViewById(R.id.NomCreche);
+	            viewHolder.adresse = (TextView) view.findViewById(R.id.adresse);
+	            viewHolder.distance = (TextView) view.findViewById(R.id.distance);
+
+
 	            view.setTag(viewHolder);
 	       
 	        } else {
@@ -66,7 +72,9 @@ public class CrecheAdapter extends BaseAdapter {
 
 	        ViewHolder holder = (ViewHolder) view.getTag();
 	        holder.NomCreche.setText(creches.get(position).getNom());
-	       
+	        holder.adresse.setText(creches.get(position).getNumRue()+" "+creches.get(position).getNomRue()+" "+creches.get(position).getCodePostal()+" "+creches.get(position).getCommune());
+	        holder.distance.setText("0km");
+	        
 	        // on intercepte le click sur les items de la liste
 	        view.setOnClickListener(new OnClickListener() {
 

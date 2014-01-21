@@ -36,17 +36,23 @@ public final class R {
         public static final int tel=0x7f020009;
     }
     public static final class id {
-        public static final int NomCreche=0x7f09001b;
-        public static final int action_settings=0x7f09001c;
+        public static final int NomCreche=0x7f090020;
+        public static final int action_settings=0x7f090022;
+        public static final int adresse=0x7f09001f;
         public static final int annuler=0x7f090005;
         public static final int annulerDetailCreche=0x7f090012;
         public static final int annulerRechercheAvance=0x7f09001a;
+        public static final int boutonInscription=0x7f090013;
         public static final int buttonRechercher=0x7f090017;
         public static final int contact=0x7f090000;
         public static final int descriptionCreche=0x7f090014;
+        public static final int distance=0x7f090021;
+        public static final int editTextConfirmationPassWord=0x7f09001e;
         public static final int editTextEmail=0x7f09000a;
         public static final int editTextLabel=0x7f090018;
         public static final int editTextMessage=0x7f090008;
+        public static final int editTextPassWord=0x7f09001b;
+        public static final int editTextPseudo=0x7f09001c;
         public static final int editTextRecherche=0x7f090016;
         public static final int editTextTitre=0x7f090009;
         public static final int emailCreche=0x7f090015;
@@ -56,13 +62,13 @@ public final class R {
         public static final int imageView2=0x7f090001;
         public static final int kmlabel=0x7f09000c;
         public static final int mail=0x7f09000f;
-        public static final int maps=0x7f090013;
         public static final int moncompte=0x7f090003;
         public static final int recherche=0x7f090002;
         public static final int rechercheAvancee=0x7f09000d;
         public static final int relativeLayout1=0x7f090006;
         public static final int seekBarKm=0x7f090019;
         public static final int telephone=0x7f090010;
+        public static final int textView1=0x7f09001d;
         public static final int textView3=0x7f09000e;
         public static final int titre=0x7f09000b;
     }
@@ -73,7 +79,9 @@ public final class R {
         public static final int activity_information_creche=0x7f030003;
         public static final int activity_recherche=0x7f030004;
         public static final int activity_recherche_avancee=0x7f030005;
-        public static final int element_liste_creche=0x7f030006;
+        public static final int activity_user_connexion=0x7f030006;
+        public static final int activity_user_inscription=0x7f030007;
+        public static final int element_liste_creche=0x7f030008;
     }
     public static final class menu {
         public static final int accueil=0x7f080000;

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond" >
+    
+ <ImageView
+        android:id="@+id/imageView1"
+        style="@style/logo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo" />
+ 
+ <RelativeLayout 
+      android:id="@+id/relativeLayout1"
+        android:layout_below="@+id/imageView1"
+        style="@style/blockContent">
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/editTextPseudo"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="14dp"
+         android:text="Inscription"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <EditText
+         android:id="@+id/editTextPseudo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/textView1"
+         android:layout_marginLeft="26dp"
+         android:layout_marginTop="14dp"
+         android:ems="10"
+         android:hint="Pseudo" >
+
+         <requestFocus />
+     </EditText>
+
+     <EditText
+         android:id="@id/editTextPassWord"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/editTextPseudo"
+         android:layout_below="@+id/editTextPseudo"
+         android:layout_marginTop="14dp"
+         android:ems="10"
+         android:hint="Mot de passe"
+         android:inputType="textPassword" />
+
+     <EditText
+         android:id="@+id/editTextConfirmationPassWord"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/editTextPassWord"
+         android:layout_below="@+id/editTextPassWord"
+         android:layout_marginTop="14dp"
+         android:ems="10"
+         android:hint="Confimation"
+         android:inputType="textPersonName" />
+     
+ </RelativeLayout>
+
+    <Button
+        android:id="@+id/boutonInscription"
+        style="@style/buttonAction"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_alignTop="@+id/annulerDetailCreche"
+        android:text="Inscription" />
+
+    <Button
+        android:id="@+id/annulerDetailCreche"
+        style="@style/buttonAnnuler"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp" />
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/annuler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond" >
+    
+ <ImageView
+        android:id="@+id/imageView1"
+        style="@style/logo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo" />
+ 
+ <RelativeLayout 
+      android:id="@+id/relativeLayout1"
+        android:layout_below="@+id/imageView1"
+        style="@style/blockContent">
+
+     <EditText
+         android:id="@+id/editTextPassWord"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/editTextPseudo"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="40dp"
+         android:ems="10"
+         android:hint="Mot de passe"
+         android:inputType="textPassword" />
+
+     <EditText
+         android:id="@+id/editTextPseudo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/editTextPassWord"
+         android:layout_alignParentLeft="true"
+         android:layout_marginBottom="20dp"
+         android:layout_marginLeft="30dp"
+         android:ems="10"
+         android:hint="Pseudo" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/editTextPseudo"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="17dp"
+         android:text="Connexion"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+ </RelativeLayout>
+
+    <Button
+        android:id="@id/annuler"
+        style="@style/buttonAnnuler"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp" />
+
+    <Button
+        android:id="@+id/boutonInscription"
+        style="@style/buttonAction"
+        android:layout_alignBaseline="@id/annuler"
+        android:layout_alignBottom="@id/annuler"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:text="Connexion" />
+
+</RelativeLayout>
