@@ -12,11 +12,11 @@
 
     <Button
         android:id="@+id/annulerDetailCreche"
+        style="@style/buttonAnnuler"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="18dp"
-        android:layout_marginLeft="34dp"
-        style="@style/buttonAnnuler"/>
+        android:layout_marginLeft="34dp" />
     
     <Button
         android:id="@+id/valider" 

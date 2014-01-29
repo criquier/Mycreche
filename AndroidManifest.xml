@@ -28,6 +28,10 @@
             android:label="@string/app_name" >
         </activity>
         <activity
+            android:name="com.platine.mycreche.activities.recherche.InformationCrecheActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
             android:name="com.platine.mycreche.activities.contact.MailActivity"
             android:label="@string/app_name" >
         </activity>
@@ -40,11 +44,11 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.platine.mycreche.activities.recherche.ConnexionActivity"
+            android:name="com.platine.mycreche.activities.user.ConnexionActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.platine.mycreche.activities.recherche.InscriptionActivity"
+            android:name="com.platine.mycreche.activities.user.InscriptionActivity"
             android:label="@string/app_name" >
         </activity>
     </application>

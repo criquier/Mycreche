@@ -40,16 +40,17 @@ public class RechercheActivity extends ListActivity {
 			String distance = extra.getString("distance");
 			
 			if(!adresse.equals("")){
-				labelRecherche.setText(adresse.replace("#", ""));	
-				if(!distance.equals("")){
+		//		labelRecherche.setText(adresse.replace("#", ""));	
+	/*			if(!distance.equals("")){
 					creches = manager.getAllCreches();
 				}
 				else{
 //					String[] address = adresse.split("#");
 					creches = manager.getCrecheByCommune(adresse);
-				}
+				}*/
 
 				//creches.add(new Creche());
+				creches = manager.getCrecheByCommune(adresse);
 			}
 			else{
 				if(!distance.equals("")){

@@ -60,7 +60,7 @@
         android:layout_marginBottom="17dp" />
 
     <Button
-        android:id="@+id/boutonInscription"
+        android:id="@+id/boutonConnexion"
         style="@style/buttonAction"
         android:layout_alignBaseline="@id/annuler"
         android:layout_alignBottom="@id/annuler"

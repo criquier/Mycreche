@@ -30,7 +30,7 @@ public class AccueilActivity extends Activity {
 		//initialisation des listeners des boutons
 		contact.setOnClickListener(new ContactListener(this.getApplicationContext()));
 		recherche.setOnClickListener(new RechercheListener(this.getApplicationContext()));
-		monCompte.setOnClickListener(new MonCompteListener());
+		monCompte.setOnClickListener(new MonCompteListener(this));
 		
 	}
 

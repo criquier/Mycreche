@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-import com.platine.mycreche.activities.contact.InformationContactActivity;
+import com.platine.mycreche.activities.recherche.InformationCrecheActivity;
 
 public class ItemListListener implements OnClickListener {
 
@@ -18,7 +18,7 @@ public class ItemListListener implements OnClickListener {
 	}
 	
 	public void onClick(View v) {
-		Intent intent = new Intent(context,InformationContactActivity.class);
+		Intent intent = new Intent(context,InformationCrecheActivity.class);
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		intent.putExtra("idCreche", this.idCreche);
 		context.startActivity(intent);

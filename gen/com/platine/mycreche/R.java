@@ -36,18 +36,19 @@ public final class R {
         public static final int tel=0x7f020009;
     }
     public static final class id {
-        public static final int NomCreche=0x7f090023;
-        public static final int action_settings=0x7f090025;
-        public static final int adresse=0x7f090022;
+        public static final int NomCreche=0x7f090024;
+        public static final int action_settings=0x7f090026;
+        public static final int adresse=0x7f090023;
         public static final int adresseCreche=0x7f090017;
         public static final int annuler=0x7f090005;
         public static final int annulerDetailCreche=0x7f090012;
         public static final int annulerRechercheAvance=0x7f09001d;
-        public static final int boutonInscription=0x7f090020;
+        public static final int boutonConnexion=0x7f090020;
+        public static final int boutonInscription=0x7f090022;
         public static final int buttonRechercher=0x7f09001a;
         public static final int contact=0x7f090000;
         public static final int descriptionCreche=0x7f090014;
-        public static final int distance=0x7f090024;
+        public static final int distance=0x7f090025;
         public static final int distanceCreche=0x7f090018;
         public static final int editTextConfirmationPassWord=0x7f090021;
         public static final int editTextEmail=0x7f09000a;

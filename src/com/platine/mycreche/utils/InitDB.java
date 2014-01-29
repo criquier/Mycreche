@@ -62,9 +62,6 @@ public class InitDB {
 		 c3.setLatitude((long) 50.41);
 		 c3.setLongitude((long) 2.82);
 		 
-		 
-		 
-
 		 crecheDAO.save(c1);
 		 crecheDAO.save(c2);
 		 crecheDAO.save(c3);
